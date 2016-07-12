@@ -30,9 +30,11 @@ $(document).ready(function() {
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,1], //2 items between 600 and 0
       itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-      
+      // autoPlay:true;
+
   });
- 
+	
+	 // $(".subslider").addClass('animated flipInY');
   // Custom Navigation Events
   $(".next").click(function(){
     owl.trigger('owl.next'); 
@@ -41,7 +43,7 @@ $(document).ready(function() {
     owl.trigger('owl.prev');
   })
   $(".play").click(function(){
-    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+      owl.trigger('owl.play,',1000);//owl.play event accept autoPlay speed as second parameter
   })
   $(".stop").click(function(){
     owl.trigger('owl.stop');
@@ -124,7 +126,7 @@ function showsl(n){
 		a = x.length;
 	}
 	for(i=0;i<x.length;i++){
-		// z
+		
 		x[i].style.display="none";
 
 	}
@@ -145,9 +147,9 @@ $(document).ready(function() {
  
   owl.owlCarousel({
       items : 7, //10 items above 1000px browser width
-      itemsDesktop : [1000,6], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,5], // betweem 900px and 601px
-      itemsTablet: [600,4], //2 items between 600 and 0
+      itemsDesktop : [1000,4], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
       itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       // singleItem:true;
   });
@@ -167,3 +169,31 @@ $(document).ready(function() {
   })
  
 });
+
+//--------------------------------
+var a1 = 1;
+showsls(a1);
+function plusdivs(n){
+	showsls(a1+=n);
+}
+function showsls(n){
+	var x1 = document.getElementsByClassName("itemtw");
+	var y1 = x1.length;
+	if(n>y1){
+		a1 = 1;
+	}
+	else if(n<=0){
+		a1 = x1.length;
+	}
+	for(i=0;i<x1.length;i++){
+		
+		x1[i].style.display="none";
+
+	}
+	x1[a1-1].style.display="block";
+	b1 = a1-1;
+	// x[a-1].animateCss('bounce');
+	// $('.itemss:eq('+b+')').removeClass('animated flipOutX');
+	$('.itemtw:eq('+b1+')').addClass('animated flipInY');
+}
+
