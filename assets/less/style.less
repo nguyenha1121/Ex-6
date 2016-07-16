@@ -490,6 +490,10 @@ div.controls{
 		}
 	}
 }
+.rowgallery{
+	display: flex;
+	justify-content:space-between;
+}
 
 .r1{
 	div.fatherbtn{
@@ -744,7 +748,10 @@ iframe{
 	height: auto;
 }
 
-
+.butslidefoot{
+	display: flex;
+	justify-content:flex-end;
+}
 
 
 
@@ -809,4 +816,31 @@ iframe{
 			justify-content:space-between;
 		}
 	}
+}
+
+
+//responsive 960
+@media (min-width:992px) and (max-width:1200px){
+	.gallery{
+		width: 50%!important;
+	}
+	.testimonials{
+		width: 50%;
+	}
+	.itemslider {
+    	width: 36%;
+	}
+
+}
+//responsive 768
+@media (min-width:768px) and (max-width:991px){
+	.navigations{
+		position: relative;
+		height: 140px;
+		
+	}
+}
+//responsive 420
+@media (min-width:420px) and (max-width:767px){
+
 }
