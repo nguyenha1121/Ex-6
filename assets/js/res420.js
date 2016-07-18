@@ -57,5 +57,5 @@ $(document).ready(function(){
 	
 
 
-	$('.owl-wrapper').addClass('container');
+	$('#owl-4 div .owl-wrapper').addClass('container');
 });
