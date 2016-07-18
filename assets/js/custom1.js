@@ -130,8 +130,9 @@ function showsl(n){
 		x[i].style.display="none";
 
 	}
-	x[a-1].style.display="block";
 	b = a-1;
+	x[b].style.display="block";
+	
 	// x[a-1].animateCss('bounce');
 	// $('.itemss:eq('+b+')').removeClass('animated flipOutX');
 	$('.itemss:eq('+b+')').addClass('animated flipInY');
