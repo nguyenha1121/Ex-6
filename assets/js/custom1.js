@@ -1,4 +1,4 @@
-console.log('script from cutsom1');
+console.log('script from cutsoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAm1');
 
 
 // $(document).ready(function() {
@@ -20,6 +20,8 @@ console.log('script from cutsom1');
 //   });
  
 // });
+
+
 $(document).ready(function() {
  
   var owl = $("#owl-demo");
@@ -119,22 +121,26 @@ function plusdiv(n){
 function showsl(n){
 	var x = document.getElementsByClassName("itemss");
 	var y = x.length;
-	if(n>y){
+	
+	if(y){
+		if(n>y){
 		a = 1;
-	}
-	else if(n<=0){
-		a = x.length;
-	}
-	for(i=0;i<x.length;i++){
-		
-		x[i].style.display="none";
+		}
+		else if(n<=0){
+			a = x.length;
+		}
+		for(i=0;i<x.length;i++){
+			
+			x[i].style.display="none";
 
-	}
-	x[a-1].style.display="block";
-	b = a-1;
+		}
+		x[a-1].style.display="block";
+		b = a-1;
+	
 	// x[a-1].animateCss('bounce');
 	// $('.itemss:eq('+b+')').removeClass('animated flipOutX');
 	$('.itemss:eq('+b+')').addClass('animated flipInY');
+}
 }
 
 
@@ -180,24 +186,26 @@ function plusdivs(n){
 function showsls(n){
 	var x1 = document.getElementsByClassName("itemtw");
 	var y1 = x1.length;
-	if(n>y1){
-		a1 = 1;
-	}
-	else if(n<=0){
-		a1 = x1.length;
-	}
-	for(i=0;i<x1.length;i++){
-		
-		x1[i].style.display="none";
+	if(y1){
+		if(n>y1){
+			a1 = 1;
+		}
+		else if(n<=0){
+			a1 = x1.length;
+		}
+		for(i=0;i<x1.length;i++){
+			
+			x1[i].style.display="none";
 
-	}
-	x1[a1-1].style.display="block";
-	b1 = a1-1;
+		}
+		x1[a1-1].style.display="block";
+		b1 = a1-1;
+	
 	// x[a-1].animateCss('bounce');
 	// $('.itemss:eq('+b+')').removeClass('animated flipOutX');
 	$('.itemtw:eq('+b1+')').addClass('animated flipInY');
 }
-
+}
 
 
 
@@ -229,63 +237,41 @@ function showsls(n){
 
 
 // $(document).ready(function(){
-	
-
-// 	if (window.matchMedia('(max-width: 767px)').matches){
-// 		$('#accordion1 .accordion').hide();
-// 		$('#accordion1 div p.clickme').click(function(){
-// 			$acc = $(this).next().next();
-// 			if($acc.is(':hidden')===true){
-// 				$('#accordion1 .accordion').slideUp();
-// 				$acc.slideDown();
-// 				$('#accordion1 div p.clickme').css("color","#000");
-// 				$(this).css("color","#6c5098");
-// 			}
-// 			else{
-// 				$acc.slideUp();
-// 				$('#accordion1 div p.clickme').css("color","#000");
-// 			}
-// 		});
-
-// 		$('.accordion2 div .accordions').hide();
-// 		$('.accordion2 div .heading-latest').click(function(){
-// 			$acc2 = $(this).next();
-// 			if($acc2.is(':hidden')===true){
-// 				$('.accordion2 div .accordions').slideUp();
-// 				$acc2.slideDown();
-// 				$('.accordion2 div .heading-latest').css("color","#000");
-// 				$(this).css("color","#6c5098");
-// 			}
-// 			else{
-// 				$acc2.slideUp();
-// 				$('.accordion2 div .heading-latest').css("color","#000");
-// 			}
-// 		});
-
-
-
-// 		$('.meetitem').hide();
-// 		for(i=0;i<5;i++){
-// 			$('.meetitem').eq(i).slideDown();
-// 		}
-// 		j = 0;
-		
-// 		$('.acc-showmore').click(function(i){
-// 			if(j==0){
-// 				$('.meetitem').slideDown();
-// 				j=1;
-// 			}
-// 			else{
-// 				$('.meetitem').hide();
-// 				for(k=0;k<5;k++){
-// 					$('.meetitem').eq(k).slideDown();
-// 				}
-// 				j=0;
-// 			}
-// 		});
-// 	};
-	
-
-
-// 	$('#owl-4').addClass('row');
+//     $(".nav-tabs li a").click(function(){
+//         $(this).tab('show');
+//     });
 // });
+$(document).ready(function(){
+	// $('.list-season li a.active').click(function(){
+		var a = $('.list-season li.active a').attr("value");
+		$('#year').text(a);
+	// })
+	$('.list-season li a').eq(0).click(function(){
+		var a = $('.list-season li a').eq(0).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(1).click(function(){
+		var a = $('.list-season li a').eq(1).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(2).click(function(){
+		var a = $('.list-season li a').eq(2).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(3).click(function(){
+		var a = $('.list-season li a').eq(3).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(4).click(function(){
+		var a = $('.list-season li a').eq(4).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(5).click(function(){
+		var a = $('.list-season li a').eq(5).attr("value");
+		$('#year').text(a);
+	})
+	$('.list-season li a').eq(6).click(function(){
+		var a = $('.list-season li a').eq(6).attr("value");
+		$('#year').text(a);
+	})
+})
