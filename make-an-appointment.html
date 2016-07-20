@@ -24,11 +24,21 @@
     <link rel="stylesheet" href="build/style.css">
     <link rel="stylesheet" href="build/contact.css">
     <link rel="stylesheet" href="build/animate.css">
+    <link rel="stylesheet" href="build/make.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
     
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
+
+
+
 
 
 </head>
+
+
 <body>
     <header>
         <div class="navigations">
@@ -110,7 +120,7 @@
              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="contact-us">
                     <img class="gach" src="assets/img/g-subs.png" alt="">
-                    <p class="lg-r up">contact us</p>
+                    <p class="lg-r up">make an appointment</p>
                     <img class="gach" src="assets/img/g-subs.png" alt="">
                 </div>
              </div>
@@ -128,22 +138,35 @@
         <div class="container hrefs cn f12">
             <a href="#">Home</a>
             <i class="fa fa-chevron-right act" aria-hidden="true"></i>
-            <a href="#">Contact Us</a>
+            <a href="#">Make an Appointment</a>
         </div>
-        <div class="container-fluid">
+    </div>
+    <div class="main-appointment">
+        <div class="container">
             <div class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14896.6360948438!2d105.834901!3d21.02632215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1468894804589" width="100%" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="form">
-            <div class="container contact-form">
-                <div class="">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="title-contact">
-                            <p class="up f18 heading pt-o">out <span class="pt-b">address</span></p>
-                            <p class="f12 pt-o cn">Where can you find us </p>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="timeopen1">
+                        <div class="opentime pt-b">
+                            <img src="assets/img/day.png" alt="">
+                            <p class="up"><span><img class="" src="assets/img/leftopentime.png" alt=""></span><span class="pt-o">Open </span><span class="pt-b">time</span><span><img class="" src="assets/img/rightopentime.png" alt=""></span></p>
+                            <ul >
+                                <li class="bg1a"><span>Monday</span><span>09:00 - 18:00</span></li>
+                                <li class="act"><span>Thuesday</span><span>09:00 - 18:00</span></li>
+                                <li class="bg1a"><span>Webneday</span><span>09:00 - 18:00</span></li>
+                                <li class=""><span>Thursday</span><span>09:00 - 18:00</span></li>
+                                <li class="bg1a"><span>Friday</span><span>09:00 - 18:00</span></li>
+                                <li class=""><span>Saturday</span><span>09:00 - 18:00</span></li>
+                                <li class="bg1a closes"><span>Sunday</span><span>Close</span></li>
+
+                            </ul>
                         </div>
-                        <img class="gach" src="assets/img/gach3.png" alt="">
+                    </div>
+                    <div>
+                        <div class="title-contact topss">
+                            <p class="up f18 pt-o heading">our <span class="pt-b">address</span></p>
+                            <p class ="pt-o f12 cn">Fiels with <span class="act"> * </span>are requierd </p>
+                            <img class="gach" src="assets/img/gach3.png" alt="">
+                        </div>
                         <div class="infos">
                             <div class="hairsaloon pt-o cn f12">
                                 <p class="pt-b">Hairpress Saloon</p>
@@ -158,42 +181,57 @@
                                 <p>Mail: <span class="pt-b">info@hairpress.com</span></p>
                                 <p>Web: <span class="pt-b">www.hairpress.com</span></p>
                             </div>
-                        </div>                
+                        </div>     
                     </div>
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="title-contact">
-                                    <p class="up f18 pt-o heading">send <span class="pt-b">us an email</span></p>
-                                    <p class ="pt-o f12 cn">Fiels with <span class="act"> * </span>are requierd </p>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <img class="gach" src="assets/img/gach6.png" alt="">
-                            </div>
-                            <div class="x3input col-md-12 col-sm-12 col-xs-12">
-                                <div>
-                                    <p class="f12 pt-b">First and Last Name <span class="act"> * </span></p>
-                                    <input type="stext">
-                                </div>
-                                <div>
-                                    <p class="f12 pt-b">Phone Number <span class="act"> * </span></p>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <p class="f12 pt-b">Email Address </p>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <p class="f12 pt-b">Your Message <span class="act"> * </span></p>
-                                <textarea name="message" id="mess" cols="60" rows="10"></textarea>
-                                <p>
-                                    <a class="send up f12 pt-b" href="#">Send message</a>
-                                </p>
-                            </div>
+                </div>
+                <div class="col-md-9 col-sm-9 sol-xs-12 form-make">
+                    <div class="title-contact">
+                        <p class="up f18 pt-o heading">make <span class="pt-b">an appointment</span></p>
+                        <p class ="pt-o f12 cn">Fiels with <span class="act"> * </span>are requierd </p>
+                        <img class="gach" src="assets/img/gach12.png" alt="">
+                    </div>
+                    <p>To make an appointment you have to vehicula turpis sed lutpat Quisque vitae quam neque. Morbi cilisis placerat dapibus. Etiam ultrice 
+                    nulla ed leo malesuada commodo bibendum orci vi verra. Donec suscipit vehicula turpis sed lutpat</p>
+                    <div class="x3input col-md-12 col-sm-12 col-xs-12">
+                        <div>
+                            <p class="f12 pt-b">First and Last Name <span class="act"> * </span></p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p class="f12 pt-b">Phone Number <span class="act"> * </span></p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p class="f12 pt-b">Email Address </p>
+                            <input type="text">
                         </div>
                     </div>
+
+
+<!-- copy code timepicker              -->
+
+                 <div class="form-group date-picker">
+                  <label class="control-label " for="date">
+                   Date
+                  </label>
+                  <div class="input-group">
+                   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                   <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                   </div>
+                   <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+                   <span>I’m flexible on dates</span>
+                  </div>
+                 </div>
+
+
+
+
+                 <p>Type here if you have some special requirements*</p>
+                 <textarea name="" id="" cols="60" rows="10"></textarea>
+                 <p>
+                    <a class="makean up f12 pt-b" href="#">make an pointment</a>
+                </p>
                 </div>
             </div>
         </div>
@@ -319,17 +357,16 @@
         </div>
         
     </footer> 
-
-
-
-
-
-    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="OwlCarousel-master/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <script src="build/jquery.plugins.min.js"></script>
-    <!-- <script src="build/scripts.min.js"></script> -->
+    <script src="build/scripts.min.js"></script>
 
+    
+
+
+    
 </body>
 </html>

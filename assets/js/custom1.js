@@ -334,4 +334,22 @@ $(document).ready(function(){
 	$('tbody tr td:first-child').addClass("text-left");
 	$('tbody tr td:first-child').addClass("bg777");
 	$('tbody tr td:first-child').next().next().addClass("bg777");
+	// $('#datetimepicker1').datetimepicker();
+
+
+
+
+
+  $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+
 })
+
