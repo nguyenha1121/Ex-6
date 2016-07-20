@@ -235,12 +235,6 @@ function showsls(n){
 	$('.itemtw:eq('+b1+')').addClass('animated flipInY');
 }
 
-
-// $(document).ready(function(){
-//     $(".nav-tabs li a").click(function(){
-//         $(this).tab('show');
-//     });
-// });
 $(document).ready(function(){
 	// $('.list-season li a.active').click(function(){
 		var a = $('.list-season li.active a').attr("value");
@@ -275,3 +269,55 @@ $(document).ready(function(){
 		$('#year').text(a);
 	})
 })
+
+//tab2
+
+
+$(document).ready(function(){
+	// $('.list-season li a.active').click(function(){
+		var a = $('.list-season2 li.active a').attr("value");
+		$('#year2').text(a);
+	// })
+	$('.list-season2 li a').eq(0).click(function(){
+		var a = $('.list-season2 li a').eq(0).attr("value");
+		$('#yea2r').text(a);
+	})
+	$('.list-season2 li a').eq(1).click(function(){
+		var a = $('.list-season2 li a').eq(1).attr("value");
+		$('#year2').text(a);
+	})
+	$('.list-season2 li a').eq(2).click(function(){
+		var a = $('.list-season2 li a').eq(2).attr("value");
+		$('#year2').text(a);
+	})
+	$('.list-season2 li a').eq(3).click(function(){
+		var a = $('.list-season2 li a').eq(3).attr("value");
+		$('#year2').text(a);
+	})
+	$('.list-season2 li a').eq(4).click(function(){
+		var a = $('.list-season2 li a').eq(4).attr("value");
+		$('#year2').text(a);
+	})
+	$('.list-season2 li a').eq(5).click(function(){
+		var a = $('.list-season2 li a').eq(5).attr("value");
+		$('#year2').text(a);
+	})
+	$('.list-season2 li a').eq(6).click(function(){
+		var a = $('.list-season2 li a').eq(6).attr("value");
+		$('#year2').text(a);
+	})
+})
+
+
+///accord
+
+var acc = document.getElementsByClassName('accord');
+if(acc.length){
+	var i ;
+	for(i = 0; i<acc.length;i++){
+		acc[i].onclick = function(){
+			 this.classList.toggle("actv");
+        	this.nextElementSibling.classList.toggle("show");
+		}
+	}
+}

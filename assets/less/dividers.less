@@ -7,7 +7,7 @@
 }
 .mother{
 	width: 100%;
-	padding:0 15px;
+	padding:50px 15px;
 	display: flex;
 	justify-content:space-between;
 }
@@ -19,7 +19,18 @@
 	}
 	
 }
+.div-gallery2{
+	width: 25%;
+	ul{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
 .gallery-content{
+	width: 70%;
+}
+.gallery-content2{
 	width: 70%;
 }
 #seasoni{
@@ -64,6 +75,52 @@
 	}
 	
 }
+
+#seasonii{
+	li{
+		a{
+			border: none;
+			color: #989898;
+		}
+	}
+	li:hover{
+		
+		a{
+			background: #6c5098;
+			border:0;
+			border-radius: 0;
+			margin: 0;
+			color: #fff;
+			font-style: italic;
+		}
+	}
+	.active{
+		position: relative;
+		a{
+			background:#6c5098;
+			margin: 0;
+			border: 0;
+			border-radius: 0;
+			color: #fff;
+		}
+	}
+	.active:before{
+		position: absolute;
+		top:0;
+		left: -27px;
+		content: "";
+		width: 0;
+		height: 0;
+
+		border-right: 28px solid #6c5098;
+	    border-bottom: 20px solid transparent;
+	    border-top: 20px solid transparent;
+	}
+	
+}
+
+
+
 .faces{
 	display: flex;
 	flex-wrap:wrap;
@@ -73,6 +130,13 @@
 		position: relative;
 	}
 }
+.fathers{
+	padding:50px 15px;
+}
+
+
+
+
 .divi-inner{
 	position: absolute;
 	top:0;
@@ -95,11 +159,101 @@
 .face:hover .divi-inner{
 	display: block;
 }
+
+
+
+
+
 .div-gallery{
+	padding-top:27px;
+	height: 100%;
+	border: 1px solid #989898;
+}
+.div-gallery2{
 	padding-top:27px;
 	height: 100%;
 	border: 1px solid #989898;
 }
 .padd15{
 	padding-left:15px;
+}
+
+#tab-menu3{
+	padding:30px 0;
+	li{
+		a{
+			border: none;
+			color: #989898;
+		}
+	}
+	li:hover{
+		
+		a{
+			background: #6c5098;
+			border:0;
+			border-radius: 0;
+			margin: 0;
+			color: #fff;
+			font-style: italic;
+		}
+	}
+	.active{
+		position: relative;
+		a{
+			background:#6c5098;
+			margin: 0;
+			border: 0;
+			border-radius: 0;
+			color: #fff;
+		}
+	}
+	.active:before{
+		position: absolute;
+		bottom:-18.4px;
+		left: 0px;
+		content: "";
+		width: 0;
+		height: 0;
+
+		border-right: 32px solid transparent;
+	    border-left: 32px solid transparent;
+	    border-top: 19px solid #6c5098;
+	}
+	
+}
+
+.tab-s{
+	padding:15px;
+	border:2px solid #989898;
+}
+.divi-accordion{
+	padding:0 15px;
+	p.f12{
+		padding-bottom: 5px;
+	}
+	img{
+		padding-bottom: 10px;
+	}
+}
+.accord:before{
+	content: "\02795";
+	font-family: 30px;
+	color:#fff;
+	background: #6c5098;
+	padding: 4px;
+	margin-right: 20px;
+}
+.accord.actv:before{
+	content: "\2796";
+	font-family: 30px;
+	color:#fff;
+	background: #6c5098;
+	padding: 4px;
+	margin-right: 20px;
+}
+p.panel{
+	display: none;
+}
+p.panel.show{
+	display: block;
 }
