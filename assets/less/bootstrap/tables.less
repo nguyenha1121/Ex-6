@@ -123,10 +123,19 @@ th {
 
 .table-hover {
   > tbody > tr:hover {
-    background-color: @table-bg-hover;
+    padding: 0;
+    border:1px solid #6c5098;
+    z-index: 100;
   }
 }
-
+// tr{
+//   padding: 2px;
+//   border-top: 0;
+// }
+th,td{
+  border-top:0px!important; 
+  padding:9px!important;
+}
 
 // Table cell sizing
 //

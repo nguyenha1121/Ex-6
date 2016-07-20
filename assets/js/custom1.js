@@ -306,6 +306,12 @@ $(document).ready(function(){
 		var a = $('.list-season2 li a').eq(6).attr("value");
 		$('#year2').text(a);
 	})
+
+
+
+
+
+
 })
 
 
@@ -321,3 +327,11 @@ if(acc.length){
 		}
 	}
 }
+
+
+$(document).ready(function(){
+	$('thead tr th:first-child').addClass("text-left");
+	$('tbody tr td:first-child').addClass("text-left");
+	$('tbody tr td:first-child').addClass("bg777");
+	$('tbody tr td:first-child').next().next().addClass("bg777");
+})
