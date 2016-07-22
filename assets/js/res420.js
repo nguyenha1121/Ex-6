@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	alert ("hgj");
 
 	if (window.matchMedia('(max-width: 767px)').matches){
 		$('#accordion1 .accordion').hide();

@@ -339,6 +339,11 @@ $(document).ready(function(){
 
 	$('.datepicker-days table').addClass(".table-bordered");
 
+	 $('#seasoniii li').click(function(){
+        	var a = $(this).children().text();
+        	$('#idtab').text(a);
+        })
+
 
   
 
@@ -354,4 +359,15 @@ $(document).ready(function(){
             autoclose: true,
         })
         $('.datepicker-days table').addClass("table-bordered");
+       
+
+
+
+
     })
+
+
+
+
+//-----------------------------
+
