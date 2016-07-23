@@ -29,8 +29,8 @@ $(document).ready(function() {
   owl.owlCarousel({
       items : 1, //10 items above 1000px browser width
       itemsDesktop : [1000,1], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,1], // betweem 900px and 601px
-      itemsTablet: [600,0], //2 items between 600 and 0
+      itemsDesktopSmall : [991,0], // betweem 900px and 601px
+      itemsTablet: [768,0], //2 items between 600 and 0
       itemsMobile : false ,// itemsMobile disabled - inherit from itemsTablet option
       autoPlay:2000
 
@@ -325,8 +325,9 @@ if(acc.length){
 	var i ;
 	for(i = 0; i<acc.length;i++){
 		acc[i].onclick = function(){
-			 this.classList.toggle("actv");
+			this.classList.toggle("actv");
         	this.nextElementSibling.classList.toggle("show");
+
 		}
 	}
 }

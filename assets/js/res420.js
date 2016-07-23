@@ -4,45 +4,54 @@ $(document).ready(function(){
 	// }
 
 	if (window.matchMedia('(max-width: 767px)').matches){
-		// $('#accordion1 .accordion').hide();
-		// $('#accordion1 div p.clickme').click(function(){
-		// 	$acc = $(this).next().next();
-		// 	if($acc.is(':hidden')===true){
-		// 		$('#accordion1 .accordion').slideUp();
-		// 		$acc.slideDown();
-		// 		$('#accordion1 div p.clickme').css("color","#000");
-		// 		$(this).css("color","#6c5098");
-		// 	}
-		// 	else{
-		// 		$acc.slideUp();
-		// 		$('#accordion1 div p.clickme').css("color","#000");
-		// 	}
-		// });
-
-		var acc = document.getElementsByClassName('clickme');
-		if(acc.length){
-			var i ;
-			for(i = 0; i<acc.length;i++){
-				acc[i].onclick = function(){
-					this.classList.toggle("actv");
-		        	this.nextElementSibling.classList.toggle("show");
-				}
+		alert("kkk");
+		$('#accordion1 .accordion').hide();
+		$('#accordion1 div p.clickme').click(function(){
+			$title = $(this);
+			$acc = $(this).next().next();
+			if($acc.is(':hidden')===true){
+				$('#accordion1 .accordion').slideUp();
+				$('.clickme').removeClass('actv');
+				$acc.slideDown();
+				$title.addClass("actv");
+				$('#accordion1 div p.clickme').css("color","#000");
+				$(this).css("color","#6c5098");
 			}
-		}
+			else{
+				$title.removeClass("actv")
+				$acc.slideUp();
+				$('#accordion1 div p.clickme').css("color","#000");
+			}
+		});
+
+		// var acc = document.getElementsByClassName('clickme');
+		// if(acc.length){
+		// 	var i ;
+		// 	for(i = 0; i<acc.length;i++){
+		// 		acc[i].onclick = function(){
+		// 			this.classList.toggle("actv");
+		//         	this.nextElementSibling.classList.toggle("show");
+		// 		}
+		// 	}
+		// }
 
 
 		$('.accordion2 div .accordions').hide();
 		$('.accordion2 div .heading-latest').click(function(){
+			$titles = $(this);
 			$acc2 = $(this).next();
 			if($acc2.is(':hidden')===true){
 				$('.accordion2 div .accordions').slideUp();
+				$('.clickme').removeClass('actv');
 				$acc2.slideDown();
+				$titles.addClass("actv");
 				$('.accordion2 div .heading-latest').css("color","#000");
 				$(this).css("color","#6c5098");
 			}
 			else{
 				$acc2.slideUp();
 				$('.accordion2 div .heading-latest').css("color","#000");
+				$titles.removeClass("actv")
 			}
 		});
 
