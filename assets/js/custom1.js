@@ -31,18 +31,21 @@ $(document).ready(function() {
       itemsDesktop : [1000,1], //5 items between 1000px and 901px
       itemsDesktopSmall : [900,1], // betweem 900px and 601px
       itemsTablet: [600,0], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-      // autoPlay:true;
+      itemsMobile : false ,// itemsMobile disabled - inherit from itemsTablet option
+      autoPlay:2000
 
   });
-	
+	owl.trigger('owl.play,',2000);
 	 // $(".subslider").addClass('animated flipInY');
   // Custom Navigation Events
   $(".next").click(function(){
     owl.trigger('owl.next'); 
+    $('.itemslider').addClass('animated');
+    $('.itemslider').addClass('bounce');
   })
   $(".prev").click(function(){
     owl.trigger('owl.prev');
+    $('.itemslider').addClass('bounce');
   })
   $(".play").click(function(){
       owl.trigger('owl.play,',1000);//owl.play event accept autoPlay speed as second parameter

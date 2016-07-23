@@ -29,7 +29,7 @@
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 106%;
   left: 0;
   z-index: @zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
@@ -76,9 +76,11 @@
 .dropdown-menu > li > a {
   &:hover,
   &:focus {
+    height: 30px;
     text-decoration: none;
     color: @dropdown-link-hover-color;
-    background-color: @dropdown-link-hover-bg;
+    background-color: rgba(23,23,23,.81);
+    color: #f5f5f5;
   }
 }
 
@@ -87,10 +89,12 @@
   &,
   &:hover,
   &:focus {
-    color: @dropdown-link-active-color;
+    color: #fff;
     text-decoration: none;
     outline: 0;
     background-color: @dropdown-link-active-bg;
+    border-top:0.5px solid #fff;
+    border-bottom: 0.5px solid #fff; 
   }
 }
 
