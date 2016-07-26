@@ -364,10 +364,9 @@ $(document).ready(function(){
         })
         $('.datepicker-days table').addClass("table-bordered");
        
-
-
-
-
+        $('.titlefooter img').addClass("paddingg");
+        // $('.frc1 .titlefooter img').removeClass("paddingg");
+        $('.frc3 img').addClass("paddingg");
     })
 
 

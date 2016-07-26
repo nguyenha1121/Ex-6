@@ -11,7 +11,7 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
+  margin-bottom: 0;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -202,6 +202,10 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   // border: 1px solid transparent;
   border-radius: @border-radius-base;
+  border:0;
+  background: -webkit-linear-gradient(#805fb3, #6b4f96, #553e78)!important;
+  background: -o-linear-gradient(#805fb3, #6b4f96, #553e78)!important;
+  background: linear-gradient(#805fb3, #6b4f96, #553e78)!important;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
@@ -443,7 +447,10 @@
     border-color: @navbar-default-toggle-border-color;
     &:hover,
     &:focus {
-      background-color: #6c5098;
+      border:none;
+      background: -webkit-linear-gradient(#805fb3, #6b4f96, #553e78)!important;
+      background: -o-linear-gradient(#805fb3, #6b4f96, #553e78)!important;
+      background: linear-gradient(#805fb3, #6b4f96, #553e78)!important;
     }
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;

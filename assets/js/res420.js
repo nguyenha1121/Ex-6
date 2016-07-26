@@ -4,7 +4,9 @@ $(document).ready(function(){
 	// }
 
 	if (window.matchMedia('(max-width: 767px)').matches){
-		alert("kkk");
+
+		$('.frc3 .row .col-md-7.col-sm-7').addClass("col-xs-7");
+		$('.frc3 .row .col-md-5.col-sm-5').addClass("col-xs-5");
 		$('#accordion1 .accordion').hide();
 		$('#accordion1 div p.clickme').click(function(){
 			$title = $(this);
